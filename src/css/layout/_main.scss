@@ -1,0 +1,45 @@
+.l-inner {
+	margin: 0 auto;
+	padding: 0 $pd-x-pc;
+	width: $content-width;
+	max-width: 100%;
+	height: inherit;
+
+	&.--full {
+		width: 100%;
+		padding: 0;
+	}
+
+	&.--wide {
+		width:  $content-width--wide;
+	}
+
+	&.--narrow {
+		width:  $content-width---narrow;
+	}
+}
+
+.l-content {
+	padding-top: 80px;
+}
+.l-container{
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-tab {
+	.l-inner {
+		padding: 0 $pd-x-tab;
+	}
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+	.l-inner {
+		padding: 0 $pd-x-sp;
+	}
+}

@@ -1,0 +1,25 @@
+/* form */ 
+
+.c-form {
+    &__form__label {
+        display: block;
+        text-align: left;
+    }
+    &__unit {
+        display: flex;
+        gap: 20px;
+        & > div {
+            width: 100%;
+        }
+        &.--half {
+            & > div {
+                width: 50%;
+            }
+        }
+        &.--multi {
+            & > div {
+                width: auto;
+            }
+        }
+    }
+}

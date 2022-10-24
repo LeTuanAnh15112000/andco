@@ -1,0 +1,39 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'news',
+		id: 'index',
+		title: '投稿形式一覧',
+		description: 'お知らせのディスクリプションです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-news">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">投稿形式一覧</h3>
+							<div class="p-indexlist">
+								<ul class="l-list --dot">
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/news/index01.html'); %>">
+											index01：サムネイル無、日付/カテゴリ+タイトルの2行表示
+										</a>
+									</li>
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/news/index02.html'); %>">
+											index02：サムネイル無、日付/カテゴリ/タイトル横並び
+										</a>
+									</li>
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/news/index03.html'); %>">
+											index03：サムネイル有、画像/テキスト縦並び
+										</a>
+									</li>
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/news/index04.html'); %>">
+											index04：サムネイル有、画像/テキスト横並び
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

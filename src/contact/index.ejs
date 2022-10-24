@@ -1,0 +1,133 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'form',
+		id: 'index',
+		title: 'お問い合わせ',
+		titlehtml: '',
+		description: 'お問い合わせフォームです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-form">
+						<div class="l-inner">
+							<div class="p-form__container">
+								<form action=""> 
+									<table class="l-table --spmax">
+										<tbody>
+											<tr>
+												<th class="l-table__col --col3 l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">テキスト用のフォーム</label>
+													</div>
+												</th>
+												<td class="l-table__col --col9 l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit">
+															<div class="c-form__unit__input">
+																<input type="text" class="c-form__input__text">
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">テキスト2カラム</label>
+													</div>
+												</th>
+												<td class="l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit --half">
+															<div class="c-form__unit__input">
+																<input type="text" class="c-form__input__text">
+															</div>
+															<div class="c-form__unit__input">
+																<input type="text" class="c-form__input__text">
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">ラジオボタン</label>
+													</div>
+												</th>
+												<td class="l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit --multi">
+															<div class="c-form__unit__input">
+																<input type="radio" class="c-form__input__radio" name="radio_1" id="radio_1-1"><label for="radio_1-1">ラジオボタン</label>
+															</div>
+															<div class="c-form__unit__input">
+																<input type="radio" class="c-form__input__radio" name="radio_1" id="radio_1-2"><label for="radio_1-2">ラジオボタン</label>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">チェックボタン</label>
+													</div>
+												</th>
+												<td class="l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit --multi">
+															<div class="c-form__unit__input">
+																<input type="checkbox" class="c-form__input__checkbox" id="check_1-1"><label for="check_1-1">チェックボックス</label>
+															</div>
+															<div class="c-form__unit__input">
+																<input type="checkbox" class="c-form__input__checkbox" id="check_1-2"><label for="check_1-2">チェックボックス</label>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">セレクトボックス</label>
+													</div>
+												</th>
+												<td class="l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit">
+															<div class="c-form__unit">
+																<select>
+																	<option value="">セレクトボックス</option>
+																	<option value="">セレクトボックス</option>
+																	<option value="">セレクトボックス</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="l-table__th">
+													<div class="c-form">
+														<label class="c-form__label">テキストエリア</label>
+													</div>
+												</th>
+												<td class="l-table__td">
+													<div class="c-form">
+														<div class="c-form__unit">
+															<div class="c-form__unit__input">
+																<textarea name="" id="" cols="30" rows="10"></textarea>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="c-button --center"><button class="c-button__link" type="submit" onclick="window.open('../contact/confirm.html', '_self'); return false;">確認</button></div>
+								</form>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

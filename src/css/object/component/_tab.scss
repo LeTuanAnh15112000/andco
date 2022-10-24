@@ -1,0 +1,18 @@
+/* tab */
+
+.c-tab {
+    display: flex;
+    &__list {
+        padding: 20px;
+        border: 1px solid #000;
+        font-weight: bold;
+        cursor: pointer;
+        &:not(:last-child) {
+            border-right: none;
+        }
+        &.is-active {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

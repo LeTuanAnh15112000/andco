@@ -1,0 +1,33 @@
+/* breadline */ 
+
+.c-breadline {
+    margin: 20px 0;
+    &__item {
+        display: inline-block;
+        a {
+            transition: 0.3s all;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    &__divider {
+        margin: 0 6px;
+    }
+}
+
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .c-breadline {
+        &__item {
+            a {
+                transition: 0.3s all;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

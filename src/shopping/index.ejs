@@ -1,0 +1,29 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'object',
+		id: 'index',
+		title: 'オブジェクト',
+		description: 'オブジェクトのディスクリプションです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-object">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">オブジェクト一覧</h3>
+							<div class="p-indexlist">
+								<ul class="l-list --dot">
+									<li>
+										<a href="<%= getRelativePath('/object/column.html'); %>">
+											column：1カラム～5カラムまでのレイアウト
+										</a>
+									</li>
+									<li>
+										<a href="<%= getRelativePath('/object/movie.html'); %>">
+											movie：動画の埋め込みレイアウト
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

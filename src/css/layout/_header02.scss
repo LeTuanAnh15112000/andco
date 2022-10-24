@@ -1,0 +1,252 @@
+.l-header02 {
+	background-color: $header-bg;
+	position: relative;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	&__inner {
+		width: 100%;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		height: 100px;
+	}
+	&__logo {
+		h1 {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: 0.3s all;
+			&:hover{
+				opacity: 0.7;
+			}
+			span {
+				padding: 1em 0;
+			}
+		}
+	}
+	&__nav {
+		height: 100%;
+		margin-left: auto;
+	}
+	&__nav__inner {
+		height: 100%;
+	}
+	&__contents {
+		height: 100%;
+	}
+	&__list {
+		height: 100%;
+		display: flex;
+	}
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 1.5em;
+		}
+		&:last-child {
+			margin-right: 40px;
+		}
+		& > a {
+			font-size:clamp(( 12px / $font-size) * 1rem, 1.5vw ,( 16px / $font-size) * 1rem);
+			font-weight: bold;
+			padding: 0 .5em;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.3s all;
+			&:hover{
+				opacity: 0.7;
+			}
+			span {
+				text-align: center;
+				display: block;
+				padding: 1em 0;
+			}
+		}
+		&.--subitem {
+			&:hover {
+				.l-header02__subitem {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__subitem {
+		position: absolute;
+		z-index: 10;
+		width: 220px;
+		background-color: #e7e7e7;
+		left: 50%;
+		bottom: 0;
+		transform: translateY(100%) translateX(-50%);
+		justify-content: center;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.3s all;
+		li {
+			&:not(:last-child) {
+				border-bottom: 1px solid #fff;
+			}
+		}
+		a {
+			height: 100%;
+			padding: 0 8px;
+			display: block;
+			transition: 0.3s all;
+			&:hover{
+				opacity: 0.7;
+			}
+			span {
+				text-align: center;
+				display: block;
+				padding: 1.5em 0;
+			}
+		}
+	}
+}
+
+.l-menu__button02 {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin-left: auto;
+	z-index: 20;
+	span {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #000;
+		position: absolute;
+		transform: translate(-50%);
+		transition: 0.3s all;
+		&:nth-child(1) {
+			top: 35%;
+			left: 50%;
+		}
+		&:nth-child(2) {
+			top: 50%;
+			left: 50%;
+		}
+		&:nth-child(3) {
+			top: 65%;
+			left: 50%;
+		}
+	}
+
+	&.is-open {
+		span {
+			&:nth-child(1) {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%) rotate(-45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%) rotate(45deg);
+			}
+		}
+	}
+}
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+	.l-header02 {
+		&__nav {
+			display: block !important;
+		}
+	}
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+	.l-header02 {
+		&__nav {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			padding-top: 100px;
+			background-color: #e7e7e7;
+			z-index: 10;
+		}
+		&__list {
+			display: block;
+		}
+		&__item {
+			border-bottom: 1px solid #000;
+			padding: 1em 60px;
+			position: relative;
+			&:not(:last-child) , &:last-child {
+				margin-right: 0;
+			}
+			&:first-child {
+				border-top: 1px solid #000;
+			}
+			&.--subitem {
+				&::before {
+					content: "";
+					display: block;
+					width: 10px;
+					height: 10px;
+					border-right: 3px solid #000;
+					border-bottom: 3px solid #000;
+					transform: rotate(45deg);
+					position: absolute;
+					right: 20px;
+					top: 40px;
+					transition: 0.3s all;
+				}
+				&.is-open {
+					&::before {
+						transform: rotate(-135deg);
+					}
+				}
+			}
+			a {
+				font-size: ( 16px / $font-size) * 1rem;
+			}
+		}
+		&__subitem {
+			width: 100%;
+			position: relative;
+			display: none;
+			left: auto;
+			bottom: auto;
+			transform: translateY(0);
+			opacity: 1;
+			visibility: inherit;
+			transition: none;
+			li {
+				&:not(:last-child) {
+					margin-right: 0;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.l-menu__button02 {
+		display: block;
+	}
+}

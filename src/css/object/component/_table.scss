@@ -1,0 +1,30 @@
+/* table */ 
+
+.c-table {
+    width: 100%;
+    @for $var from 1 to 12 {
+        .c-table__col--#{$var} {
+            width: calc( 100% / (12 - #{$var}));
+        }  
+    }
+    th , td {
+        padding: 0.75em;
+        vertical-align: top; 
+        &.--center {
+            text-align: center;
+        }
+    }
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-table {
+        &.--spmax {
+            th , td {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

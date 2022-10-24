@@ -1,0 +1,34 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'jsparts',
+		id: 'index',
+		title: 'jsパーツ一覧',
+		description: '',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-js-parts">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">jsパーツ一覧</h3>
+							<div class="p-indexlist">
+								<ul class="l-list --dot">
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/js-parts/slider.html'); %>">
+											slider
+										</a>
+									</li>
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/js-parts/tab_accrodion.html'); %>">
+											タブ、アコーディオン
+										</a>
+									</li>
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/js-parts/modal-popup.html'); %>">
+											モーダル
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

@@ -1,0 +1,114 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'form',
+		id: 'confirm',
+		title: 'お問い合わせ',
+		titlehtml: '',
+		description: 'お問い合わせフォームです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-form">
+						<div class="l-inner">
+							<div class="p-form__container">
+								<table class="l-table --spmax">
+									<tbody>
+										<tr>
+											<th class="l-table__col --col3 l-table__th">
+												<div class="c-form">
+													<div class="c-form__label">テキスト用のフォーム</div>
+												</div>
+											</th>
+											<td class="l-table__col --col9 l-table__td">
+												<div class="c-form">
+													<div class="c-form__unit">
+														<div class="c-form__unit__input">
+															入力されたテキストが入ります。
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="l-table__th">
+												<div class="c-form">
+													<div class="c-form__label">テキスト2カラム</div>
+												</div>
+											</th>
+											<td class="l-table__td">
+												<div class="l-table__content">
+													<div class="c-form__unit --multi">
+														<div class="c-form__unit__input">
+															入力されたテキストが入ります。
+														</div>
+														<div class="c-form__unit__input">
+															入力されたテキストが入ります。
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="l-table__th">
+												<div class="c-form">
+													<div class="c-form__label">ラジオボタン</div>
+												</div>
+											</th>
+											<td class="l-table__td">
+												<div class="l-table__content">
+													<div class="c-form__unit --multi">
+														<div class="c-form__unit__input">
+															ラジオボタンの選択内容
+														</div>
+														<div class="c-form__unit__input">
+															ラジオボタンの選択内容
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="l-table__th">
+												<div class="c-form">
+													<div class="c-form__label">チェックボタン</div>
+												</div>
+											</th>
+											<td class="l-table__td">
+												<div class="l-table__content">
+													<div class="c-form__unit --multi">
+														<div class="c-form__unit__input">
+															チェックボタンの選択内容
+														</div>
+														<div class="c-form__unit__input">
+															チェックボタンの選択内容
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="l-table__th">
+												<div class="c-form">
+													<div class="c-form__label">テキストエリア</div>
+												</div>
+											</th>
+											<td class="l-table__td">
+												<div class="l-table__content">
+													<div class="c-form__unit">
+														<div class="c-form__unit__inputarea">
+															入力されたテキストがはいります。入力されたテキストがはいります。入力されたテキストがはいります。入力されたテキストがはいります。入力されたテキストがはいります。
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="c-button --center">
+								<button class="c-button__link" type="submit" onclick="window.open('../contact/', '_self'); return false;">入力内容に戻る</button>
+								<button class="c-button__link" type="submit" onclick="window.open('../contact/complate.html', '_self'); return false;">送信</button>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

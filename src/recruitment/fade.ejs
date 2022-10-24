@@ -1,0 +1,64 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'animation',
+		id: 'fade',
+		title: 'アニメーション一覧',
+		description: '',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-animation__fade">
+						<div class="p-layout">
+						    <div class="l-inner --narrow">
+    							<h3 class="c-heading1">アニメーション一覧</h3>
+                                <div class="l-inner --narrow">
+                                    <h4 class="c-heading2">フェードイン</h4>
+                                    <div class="l-column js-fade__trigger --fadeup">
+                                        <div class="l-column__item">
+                                            <div class="l-column__img" style="background-image: url(https://placehold.jp/600x400.png);"></div>
+                                        </div>
+                                        <div class="l-column__item">
+                                            <div class="l-column__title">左右カラムのタイトル</div>
+                                            <p class="l-column__text">左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル</p>
+                                        </div>
+                                    </div>
+                                    <div class="l-column --reverse js-fade__trigger --fadeleft">
+                                        <div class="l-column__item">
+                                            <div class="l-column__img" style="background-image: url(https://placehold.jp/600x400.png);"></div>
+                                        </div>
+                                        <div class="l-column__item">
+                                            <div class="l-column__title">左右カラムのタイトル</div>
+                                            <p class="l-column__text">左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル左右カラムのタイトル</p>
+                                        </div>
+                                    </div>
+                                </div>
+    						</div>
+						</div>
+					</section>
+                    <section class="p-animation__fade">
+                        <div class="p-layout">
+                            <div class="l-inner --narrow">
+                                <div class="l-inner --narrow">
+                                    <h4 class="c-heading2">フェードイン</h4>
+                                    <div class="l-card --col2 js-fade__delaytrigger --delaycol2">
+                                        <div class="l-card__item --fadeup">
+                                            <div class="l-card__img" style="background-image: url(https://placehold.jp/600x400.png);"></div>
+                                            <div class="l-card__title">2カラムのタイトル</div>
+                                            <p class="l-card__text">2カラムのテキスト</p>
+                                        </div>
+                                        <div class="l-card__item --fadeup">
+                                            <div class="l-card__img" style="background-image: url(https://placehold.jp/600x400.png);"></div>
+                                            <div class="l-card__title">2カラムのタイトル</div>
+                                            <p class="l-card__text">2カラムのテキスト2カラムのテキスト2カラムのテキスト2カラムのテキスト2カラムのテキスト</p>
+                                        </div>
+                                        <div class="l-card__item --fadeup">
+                                            <div class="l-card__img" style="background-image: url(https://placehold.jp/600x400.png);"></div>
+                                            <div class="l-card__title">2カラムのタイトル</div>
+                                            <p class="l-card__text">2カラムのテキスト</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+<%- include('../_footer'); %>

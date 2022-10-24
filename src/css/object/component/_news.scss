@@ -1,0 +1,52 @@
+/* newsparts */ 
+
+.c-news{
+    &__item {
+        padding: 20px 10px;
+        border-bottom: 1px solid #e0e0e0;
+        &.--new{
+            .c-news__title{ /*NEWの位置によって親要素変更*/
+                &::after{
+                    content: "NEW";
+                    color: red;
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__day {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &__cat {
+        display: inline-block;
+        &.--type1 {
+            color: #ff8181;
+        }
+        &.--type2 {
+            color: #ff81f9;
+        }
+        &.--type3 {
+            color: #818eff;
+        }
+    }
+}
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .c-news {
+        &__item {
+            a {
+                transition: 0.3s all;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+

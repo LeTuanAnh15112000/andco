@@ -1,0 +1,32 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'jsparts',
+		id: '',
+		title: 'モーダル',
+		description: '',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-js-parts__modal">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">モーダル</h3>
+							<div class="p-layout">
+                                <div class="c-button --center"><button class="c-button__link js-modal__opentrigger" data-modal="modal1">モーダル表示</button></div>
+								<div class="c-modal js-modal__container" data-modal="modal1">
+                                    <div class="c-modal__close js-modal__closetrigger"></div>
+                                    <div class="c-modal__item">
+                                        モーダル内で表示したい内容1
+                                    </div>
+                                </div>
+								<div class="c-button --center"><button class="c-button__link js-modal__opentrigger" data-modal="modal2">モーダル表示</button></div>
+								<div class="c-modal js-modal__container" data-modal="modal2">
+                                    <div class="c-modal__close js-modal__closetrigger"></div>
+                                    <div class="c-modal__item">
+                                        モーダル内で表示したい内容2
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</section>
+
+<%- include('../_footer'); %>

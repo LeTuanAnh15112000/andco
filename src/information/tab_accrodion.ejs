@@ -1,0 +1,52 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'jsparts',
+		id: '',
+		title: 'タブ、アコーディオン',
+		description: '',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-js-parts__tab">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">タブ</h3>
+							<div class="p-layout">
+								<ul class="c-tab js-tab__list" data-tab="tab01">
+                                    <li class="c-tab__list is-active">タブリスト1</li>
+                                    <li class="c-tab__list">タブリスト2</li>
+                                </ul>
+                                <div class="js-tab__item" data-tab="tab01">
+                                    <div>
+                                        タブ１のアイテムです。
+                                    </div>
+                                    <div style="display: none;">
+                                        タブ2のアイテムです。
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</section>
+                    <section class="p-js-parts__accordion">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">アコーディオン</h3>
+							<div class="p-layout">
+                                <div class="c-accrodion">
+                                    <div class="c-accrodion__title js-accoridion__trigger is-open">
+                                        アコーディオン見出し
+                                    </div>
+                                    <div class="c-accrodion__text">
+                                        アコーディオンテキストです。
+                                    </div>
+                                </div>
+                                <div class="c-accrodion">
+                                    <div class="c-accrodion__title js-accoridion__trigger">
+                                        アコーディオン見出し
+                                    </div>
+                                    <div class="c-accrodion__text" style="display: none;">
+                                        アコーディオンテキストです。
+                                    </div> 
+                                </div>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

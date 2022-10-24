@@ -1,0 +1,101 @@
+/* newsparts */ 
+/*テキストのみ　全て横並び　※script.js（文字数制限）調整必要*/
+
+.c-news02{
+    &__list{
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__item {
+        padding: 20px 10px;
+        border-bottom: 1px solid #e0e0e0;
+        &.--new{
+            .c-news02__title{ /*NEWの位置によって親要素変更*/
+                &::after{
+                    content: "NEW";
+                    color: red;
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__day {
+        display: inline-block;
+        min-width: 80px;
+        margin-right: 1em;
+    }
+    &__cat {
+        display: inline-block;
+        min-width: 100px;
+        &.--type1 {
+            color: #ff8181;
+        }
+        &.--type2 {
+            color: #ff81f9;
+        }
+        &.--type3 {
+            color: #818eff;
+        }
+    }
+}
+
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .c-news02{
+        &__item {
+            a{
+                display: flex;
+                align-items: center;
+                transition: 0.3s all;
+                &:hover{
+                    opacity: 0.7;
+                }
+            } 
+        }
+        &__title{
+            width: calc(100% - 200px);
+        }
+        &__list {
+            /*1列で改行する場合*/
+            &.--limit {
+                .c-news02__item {
+                    &.--new {
+                        .c-news02__title {
+                            position: relative;
+                            &::after {
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+                .c-news02__title{
+                    width: calc(100% - 80px - 100px - 20px );
+                    padding-right: 40px;
+                    @include text-overflow()
+                }
+            }
+        }
+    }
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-news02{
+        &__date{
+            margin-right: 1em;
+        }
+        &__title{
+            display: block;
+        }
+    }
+}

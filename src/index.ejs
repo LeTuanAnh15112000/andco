@@ -1,0 +1,197 @@
+<%- include('_config', { extend: {
+	relativePath: '.',
+	page: {
+		id: 'index',
+		title: 'TOPページ',
+		description: 'TOPページです',
+	}
+}}); %><%- include('_header'); %>
+					<div class="c-mainvisual">
+						<div class="c-mainvisual__item js-mainslick" >
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+							<div class="slick-slide" style="background-image: url(<%= getRelativePath('/images/index/slider_hirutoyoru.jpg'); %>);"></div>
+						</div>
+						<figure class="c-mainvisual__img">
+							<img src="<%= getRelativePath('/images/index/TextHirutoyoru.png'); %>" alt="Text Hiru to yoru">
+						</figure>
+					</div>
+					<section class="p-shooting">
+						<div class="l-container">
+							<h2 class="u-title">ショッピング</h2>
+							<div class="c-shooting__online">
+								<div class="c-shooting__img">
+									<figure>
+										<img src="<%= getRelativePath('/images/index/TextHirutoyoru.png'); %>" alt="">
+									</figure>
+								</div>
+								<div class="c-shooting__content">
+									<p class="c-shooting__text">
+										「ひるとよる」人気メニューのオンラインショップです。<br class="pc-only">
+										丁寧に下処理した豚骨スープや、こだわりの麺で仕<br class="pc-only">
+										上げた2大看板メニューの「らーめんとちゃんぽ<br class="pc-only">
+										ん」は、ご家庭用だけではなく手土産や贈答品とし<br class="pc-only">
+										ても大変人気です。<br class="pc-only">
+										ぜひ当サイトでお好みの商品をお買い求めください。
+									</p>
+									<span class="c-shooting__btn">商品一覧</span>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="p-news">
+						<div class="l-container">
+							<h2 class="u-title">お知らせ</h2>
+							<ul class="c-news__list">
+								<li class="c-news__item">
+									<a href="#">
+										<div class="c-news__day">2022.00.00</div>
+										<div class="c-news__title">
+										 NEW	例）年末年始の営業について
+										</div>
+									</a>
+								</li>
+								<li class="c-news__item">
+									<a href="#">
+										<div class="c-news__day">2022.00.00</div>
+										<div class="c-news__title">
+											例）営業時間のお知らせ
+										</div>
+									</a>
+								</li>
+								<li class="c-news__item">
+									<a href="#">
+										<div class="c-news__day">2022.10.17</div>
+										<!-- <div class="c-news__cat --type3">カテゴリー3</div> -->
+										<div class="c-news__title">
+											例）サイトをオープンしました。
+										</div>
+									</a>
+								</li>
+							</ul>		
+						</div>
+					</section>
+					<section class="p-monoca">
+						<div class="l-container">
+							<h2 class="u-title">nomocaカード</h2>
+							<div class="c-monoca__img">
+									<figure>
+										<img src="" alt="">
+									</figure>
+									<figure>
+										<img src="" alt="">
+									</figure>
+							</div>
+							<p class="c-monoca__text">
+								生ビールが1杯100円で飲める、お得なnomocaカード！<br class="pc-only">
+								1枚1,000円でnomocaカードをご購入いただき、1杯100円で生ビールが飲めます。<br class="pc-only">
+								詳しくはスタッフにお問い合わせください。
+							</p>
+						</div>
+					</section>
+					<section class="p-store">
+						<div class="l-container">
+							<h2 class="u-title">店舗情報</h2>
+							<div class="c-store__head">
+								<h3 class="u-title3">ひるとよる本店</h3>
+								<div class="c-store__round">
+									<div class="u-map"></div>
+									<div class="c-store__round --info">
+											<div class="c-store__round --row">
+												<span class="u-btn">住所</span>
+												<div class="c-store__round --title">福岡県福岡市中央大名2-2-41</div>
+											</div>
+											<div class="c-store__round --row">
+												<span class="u-btn">アクセス</span>
+												<div class="c-store__round --title">地下鉄空港線赤坂駅より徒歩3分<br class="pc-only">
+													赤坂駅から165m</div>
+											</div>
+											<div class="c-store__round --row">
+												<span class="u-btn">TEL</span>
+												<div class="c-store__round --title">092-713-2008</div>
+											</div>
+											<div class="c-store__round --row">
+												<span class="u-btn">営業時間</span>
+												<div class="c-store__round --title">AM11:00～翌AM3:00</div>
+											</div>
+											<div class="c-store__round --row">
+												<span class="u-btn">定休日</span>
+												<div class="c-store__round --title">日曜日※月祝日の場合は月曜日</div>
+											</div>
+											<div class="c-store__round --row">
+												<span class="u-btn">座席</span>
+												<div class="c-store__round --title">
+													カウンター：12席<br class="pc-only">
+													テーブル：4～最大20席<br class="pc-only">
+													外カウンター：4席
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+							<div class="c-store__nagahama">
+								<h3 class="u-title3">ひるとよる長浜店</h3>
+								<div class="c-store__round">
+									<div class="u-map"></div>
+									<div class="c-store__round --info">
+										<div class="c-store__round --row">
+											<span class="u-btn">住所</span>
+											<div class="c-store__round --title">福岡市中央区長浜2丁目3-31</div>
+										</div>
+										<div class="c-store__round --row">
+											<span class="u-btn">アクセス</span>
+											<div class="c-store__round --title">
+												テキストテキストテキスト<br class="pc-only">
+												テキストテキストテキスト
+											</div>
+										</div>
+										<div class="c-store__round --row">
+											<span class="u-btn">TEL</span>
+											<div class="c-store__round --title">000-000-0000</div>
+										</div>
+										<div class="c-store__round --row">
+											<span class="u-btn">営業時間</span>
+											<div class="c-store__round --title">AM00:00～PM00:00</div>
+										</div>
+										<div class="c-store__round --row">
+											<span class="u-btn">定休日</span>
+											<div class="c-store__round --title">日曜日※月祝日の場合は月曜日</div>
+										</div>
+										<div class="c-store__round --row">
+											<span class="u-btn">座席</span>
+											<div class="c-store__round --title">
+												外カウンター：4席
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</section>
+					<section class="p-slider">
+							<div class="l-container1">
+								<ul class="c-slider">
+									<li><img src="<%= getRelativePath('/image/slider1.jpg'); %>" alt="slider1"></li>
+									<li><img src="<%= getRelativePath('/image/slider2.jpg'); %>" alt="slider2"></li>
+									<li><img src="<%= getRelativePath('/image/slider3.jpg'); %>" alt="slider3"></li>
+									<li><img src="<%= getRelativePath('/image/slider4.jpg'); %>" alt="slider4"></li>
+									<li><img src="<%= getRelativePath('/image/slider5.jpg'); %>" alt="slider5"></li>
+								  <!--/slider-->
+								</ul>
+							</div>
+					</section>
+					<section class="p-recruitment">
+						<div class="l-container" style="background-image: url(<%= getRelativePath('/image/recruitment.jpg'); %>);">
+							<h2 class="u-title --edit1">採用情報</h2>
+							<p class="c-recruitment__text">
+								らーめん居酒屋「博多らーめん・ちゃんぽん ひるとよる」は<br class="pc-only">
+								未経験の方でも大募集中です！<br class="pc-only">
+								一緒にお店を大きくしてくれるやる気のある方を募集しています！
+							</p>
+						</div>
+					</section>
+<%- include('_footer'); %> 

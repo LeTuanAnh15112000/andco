@@ -1,0 +1,114 @@
+/* newsparts */ 
+/*サムネイル有　テキストと横並び　※script.js（文字数制限）調整必要*/
+
+.c-news04{
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+        &.--new{
+            .c-news04__title{ /*NEWの位置によって親要素変更*/
+                &::after{
+                    content: "NEW";
+                    color: red;
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        a {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            position: relative;
+            text-decoration: none;
+            background-color: #fff;
+        }
+    }
+    &__image {
+        max-width: 300px;
+        width: 25%;
+        padding-top: 20%;
+        background: #fff no-repeat center center;
+        background-size: cover;
+    }
+    &__text {
+        width: 75%;
+        text-align: left;
+    }
+    &__day {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &__cat {
+        display: inline-block;
+        &.--type1 {
+            color: #ff8181;
+        }
+        &.--type2 {
+            color: #ff81f9;
+        }
+        &.--type3 {
+            color: #818eff;
+        }
+    }
+}
+
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .c-news04{
+        &__item {
+            width: 48%;
+            &:nth-child(2n-1){
+                margin-right: 4%;
+            }
+            a {
+                transition: 0.3s all;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        &__text{
+            padding: 1em 0 1em 1.5em;
+        }
+    }
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-news04{
+        &__list{
+            display: block;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__image {
+            width: 120px;
+            height: 90px;
+            padding-top: 0;
+        }
+        &__text{
+            width: calc(100% - 130px);
+            padding: 0 0 0.25em 1em;
+        }
+        &__date{
+            padding-top: 0;
+        }
+        &__title{
+            line-height: 1.5;
+        }
+    }
+}

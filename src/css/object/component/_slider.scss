@@ -1,0 +1,32 @@
+/* slider */
+
+.c-slider {
+    .slick-slide {
+        height: 100%;
+        line-height: 0;
+    }
+    &.--linkmain {
+        .slick-slide {
+            margin: 0 1em;
+        }
+    }
+    &.--linkthumbnail {
+        .slick-slide {
+            margin: 0 1em;
+        }
+        .slick-current {
+            outline: 6px solid #ff0000;
+            outline-offset: -6px;
+        }
+    }
+    &__item {
+        display: block;
+        height: 100%;
+    }
+    &__img {
+        padding-top: calc(100% * 2/3);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,50 @@
+/* modal */ 
+
+.c-modal {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    padding: 2em;
+    width: calc(100% - 60px);
+    min-height: 50vh;
+    max-width: $content-width;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    &__bg {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .4);
+    }
+    &__close {
+        background-color: #bbbbbb;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+        cursor: pointer;
+        &::after , &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        &::after {
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+        }
+        &::before {
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+    }
+}

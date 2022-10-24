@@ -1,0 +1,28 @@
+/* list */ 
+
+.l-list {
+    &.--dot {
+        margin-left: 1.25em;
+        li {
+            position: relative;
+            &::before {
+                position: absolute;
+                left: -1em;
+                top: .6em;
+                display: block;
+                content: "";
+                width: 8px;
+                height: 8px;
+                background-color: #000;
+                border-radius: 50%;
+            }
+        }
+        &.--red {
+            li {
+                &::before {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

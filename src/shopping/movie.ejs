@@ -1,0 +1,48 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'object',
+		id: 'movie',
+		title: '動画一覧',
+		description: 'オブジェクトのディスクリプションです。',
+	}
+}}); %><%- include('../_header'); %>
+					<h3 class="c-heading1">動画一覧</h3>
+					<section class="p-object__movie">
+						<div class="p-layout">
+							<div class="l-inner --narrow">
+								<h4 class="c-heading2">YouTube埋め込み1</h4>
+								<div class="c-movie">
+									<div class="c-movie__item01">
+										<iframe src="https://www.youtube.com/embed/_w39sCCtdZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="p-object__movie">
+						<div class="p-layout">
+							<div class="l-inner --narrow">
+								<h4 class="c-heading2">YouTube埋め込み2（外部リンク）</h4>
+								<div class="c-movie">
+									<div class="c-movie__item02">
+										<!-- http://img.youtube.com/vi/ここに動画のIDをいれるとサムネイルになります。/mqdefault.jpg -->
+										<a target="_blank" style="background-image: url(https://img.youtube.com/vi/_w39sCCtdZk/mqdefault.jpg);" href="https://youtu.be/_w39sCCtdZk"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="p-object__movie">
+						<div class="p-layout">
+							<div class="l-inner --narrow">
+								<h4 class="c-heading2">YouTube埋め込み3（クリック後再生）</h4>
+								<div class="c-movie">
+									<div class="c-movie__item03 js-youtubetrigger" data-video="_w39sCCtdZk">
+										<img src="https://placehold.jp/600x400.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

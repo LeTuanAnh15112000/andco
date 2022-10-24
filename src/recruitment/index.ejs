@@ -1,0 +1,24 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'animation',
+		id: 'index',
+		title: 'アニメーション一覧',
+		description: '',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-animation">
+						<div class="l-inner --narrow">
+							<h3 class="c-heading1">アニメーション一覧</h3>
+							<div class="p-indexlist">
+								<ul class="l-list --dot">
+									<li>
+										<a class="u-hover-opacity" href="<%= getRelativePath('/animation/fade.html'); %>">
+											出現方法（fadein）
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

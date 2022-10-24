@@ -1,0 +1,16 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		category: 'form',
+		id: 'confirm',
+		title: 'お問い合わせ',
+		titlehtml: '',
+		description: 'お問い合わせフォームです。',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-form">
+						<div class="l-inner">
+							<div class="c-button --center"><a href="<%= getRelativePath('/'); %>" class="c-button__link">TOPページへ</a></div>
+						</div>
+					</section>
+<%- include('../_footer'); %>

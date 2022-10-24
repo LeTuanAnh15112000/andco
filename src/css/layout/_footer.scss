@@ -1,0 +1,24 @@
+.l-footer{
+	background-color: #000;
+	color: #fff;
+	&__inner {
+		width: 100%;
+		max-width: 1440px;
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+	&__contents {
+		padding: 50px 0 20px;
+	}
+	&__company{
+		text-align: center;
+		margin-bottom: 50px;
+		a{
+			color: #fff;
+		}
+	}
+	&__copyright {
+		text-align: center;
+		font-size: ( 14px / $font-size) * 1rem;
+	}
+}

@@ -1,0 +1,82 @@
+/* card */ 
+
+.l-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    &__img{
+        //600×400の比率
+        padding-top: calc(100% * 2/3);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title{
+        font-weight: bold;
+        text-align: left;
+        padding: 1em 0 0;
+    }
+}
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .l-card {
+        &.--col2 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+        &.--col3 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 40px) / 3);
+            }
+        }
+        &.--col4 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 60px) / 4);
+            }
+        }
+        &.--col5 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 80px) / 5);
+            }
+        }
+    }
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .l-card {
+        &.--col2 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+        &.--col3 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+        &.--col4 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+        &.--col5 {
+            gap: 20px;
+            .l-card__item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+    }
+}
