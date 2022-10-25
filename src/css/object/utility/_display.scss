@@ -6,3 +6,10 @@
 		display: none !important;
 	}
 }
+
+
+@include media-breakpoint-sp {
+    .u-only__sp {
+		display: inline-flex !important;
+	}
+}

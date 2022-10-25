@@ -4,40 +4,75 @@
 .c-background{
     &__scroll{
         margin-top: 70px;
+        @include media-breakpoint-sp{
+            margin-top: 50px;
+        }
     }
     &__about{
-        margin-top: 160px;;
+        margin-top: 160px;
+        @include media-breakpoint-sp{
+            margin-top: 52px;
+        }
     }
 }
 // mainvisual
 .c-mainvisual{
     margin-top: 110px;
+    @include media-breakpoint-sp{
+        margin-top: 128px;
+    }
 }
 // shooting    
 .p-shooting{
     margin-top: 200px;
+    @include media-breakpoint-sp{
+        margin-top: 136px;
+    }
     .c-shooting{
         &__online{
             margin-top: 80px;
+            @include media-breakpoint-sp{
+                margin-top: 56px;
+            }
         }
     }
 }
 //news
 .p-news {
     margin-top: 200px;
+    @include media-breakpoint-sp{
+        margin-top: 158px;
+    }
 }
 // monoca
 .p-monoca{
     margin-top: 202px;
+    @include media-breakpoint-sp{
+        margin-top: 136px;
+    }
 }
 // store
 .p-store{
     margin-top: 192px;
+    @include media-breakpoint-sp{
+        .l-container{
+            width: 100%;
+        }
+    }
 }
 // slider
 .p-slider{
     margin-top: 90px;
+    @include media-breakpoint-sp{
+        margin-top: 20px;
+    }
 }
 .p-recruitment{
     margin-top: 198px;
+    @include media-breakpoint-sp{
+        margin-top: 152px;
+        .l-container{
+            width: 100%;
+        }
+    }
 }

@@ -21,7 +21,11 @@
         letter-spacing: 4.6px;
         @include media-breakpoint-sp{
             font-size: ( 34px / $font-size) * 1rem;
+            line-height: 1.4;
+            padding: 0 10px;
+            letter-spacing: 0;
         }
+        
         &.--edit2{
             letter-spacing: 1.2px;
         }
@@ -36,6 +40,10 @@
         position: relative;
         padding: 0 32px;
         letter-spacing: 4.6px;
+        @include media-breakpoint-sp{
+            font-size: ( 34px / $font-size) * 1rem;
+            line-height: 1.4;
+        }
     &.--edit1{
         color: #000;
         background: #fff;

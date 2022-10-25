@@ -1,7 +1,7 @@
 jQuery(function($) {
     $('.js-mainslick').slick({
         infinite: true,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		speed: 2000,
 		cssEase: 'linear',

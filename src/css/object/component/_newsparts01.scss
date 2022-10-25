@@ -3,10 +3,16 @@
 .c-news{
     &__list{
         margin-top: 80px;
+        @include media-breakpoint-sp{
+            margin-top: 55px;
+        }
     }
     &__item {
         padding: 14px 10px;
         border-bottom: 2px solid #000;
+        @include media-breakpoint-sp{
+            padding: 12px 10px;
+        }
         &:first-child{
         border-top: 2px solid #000;
         }
@@ -24,6 +30,9 @@
     }
     &__contain{
         display: flex;
+        @include media-breakpoint-sp{
+            flex-direction: column;
+        }
     }
 }
 

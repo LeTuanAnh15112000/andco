@@ -4,6 +4,9 @@
         font-weight: bold;
         margin-top: 70px;
         letter-spacing: 1.2px;
+        @include media-breakpoint-sp{
+            margin-top: 48px;
+        }
     }
     &__scroll{
         span{
