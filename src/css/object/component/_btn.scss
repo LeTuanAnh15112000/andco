@@ -1,32 +1,15 @@
 /* btn */ 
-
-.c-button {
-    &.--center {
-        text-align: center;
-    }
-    &__link {
-        display: inline-block;
-        min-width: 300px;
-        margin: 10px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid #333;
-        font-size: ( 16px / $font-size) * 1rem;
-        font-family: $font-family-gothic;
-    }
+// c-store page index
+.u-btn{
+    width: 88px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #000;
+    font-size: ( 18px / $font-size) * 1rem;
+    font-weight: bold;
+    margin-right: 11px;
+    height: 24px;
 }
 
-
-
-// Desktop + Tablet
-// --------------------------------------------------
-@include media-breakpoint-pc-tab {
-    .c-button {
-        &__link {
-            transition: 0.3s all;
-            &:hover{
-                opacity: 0.7;
-            }
-        }
-    }
-}

@@ -1,0 +1,29 @@
+.c-store{
+    &__head{
+        margin-top: 66px;
+    }
+    &__round{
+        display: $flex;
+        border-top: 2px solid #000;
+        margin-top: 4px;
+        padding: 23px 0 22px 0;
+        @include media-breakpoint-sp{
+            flex-direction: column;
+        }
+    }
+    &__row{
+        padding-left: 40px;
+        width: 41.7%;
+        @include media-breakpoint-tab-sp {
+            padding-left: 15px;
+        }
+        @include media-breakpoint-sp{
+            width: 100%;
+            padding-left: 20px;
+        }
+    }
+    &__col{
+        display: $flex;
+        margin-bottom: 18px;
+    }
+}

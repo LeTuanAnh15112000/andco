@@ -1,0 +1,8 @@
+.p-recruitment{
+    .u-center__text{
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-size: 110%;
+        }
+    }
+}

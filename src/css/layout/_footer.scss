@@ -1,24 +1,48 @@
 .l-footer{
+	margin-top: 200px;
 	background-color: #000;
 	color: #fff;
-	&__inner {
+	&__img{
+		padding-top: 56px;
+	}
+	&__contain {
 		width: 100%;
-		max-width: 1440px;
-		padding: 0 20px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
-	&__contents {
-		padding: 50px 0 20px;
+	&__online{
+		margin: 47px 0 42px 0;
+		display: inline-block;
 	}
-	&__company{
-		text-align: center;
-		margin-bottom: 50px;
-		a{
-			color: #fff;
+	&__border{
+		display: inline-flex;
+		align-items: center;
+		border: 2px solid #fff;
+		margin: 10px;
+		padding: 23px 58px;
+		img{
+			margin-right: 20px;
+		}
+	}
+	&__menu{
+		max-width: 454px;
+		width: 100%;
+		margin: 0 auto;
+		ul{
+			display: $flex;
+			justify-content: space-between;
+		
+			a{
+				color: #fff;
+				display: inline-block;
+				padding: 5px 8px;
+			}
 		}
 	}
 	&__copyright {
-		text-align: center;
 		font-size: ( 14px / $font-size) * 1rem;
+		font-weight: bold;
+		padding: 24px 0 10px;
+		letter-spacing: 0.4px;
 	}
 }

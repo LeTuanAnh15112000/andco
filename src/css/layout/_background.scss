@@ -1,0 +1,11 @@
+.c-background{
+    &__hiru{
+        img{
+            object-fit: cover;
+            @include media-breakpoint-sp{
+                height: 386px;
+                width: 280px;
+            }
+        }
+    }
+}

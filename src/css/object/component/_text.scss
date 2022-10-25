@@ -1,0 +1,90 @@
+.c-background{
+    &__text{
+        font-size: (18px / $font-size) * 1rem;
+        font-weight: bold;
+        margin-top: 70px;
+        letter-spacing: 1.2px;
+    }
+    &__scroll{
+        span{
+            font-size: (18px / $font-size) * 1rem;
+            font-weight: bold;
+        }
+    }
+}
+// css shooting
+.c-shooting{
+    &__content{
+        padding-left: 40px;
+        line-height: 1.75;
+        @include media-breakpoint-tab-sp {
+            padding-left: 10px;
+        }
+        @include media-breakpoint-sp{
+            padding-left: 0px;
+        }
+    }
+    &__text{
+        font-size: (18px / $font-size) * 1rem;
+        letter-spacing: 1px;
+    }
+    &__note{
+        font-size: (28px / $font-size) * 1rem;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2.8px;
+    }
+    &__btn{
+        font-size: (18px / $font-size) * 1rem;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 25px;
+       span{
+        border: 2px solid #000;
+        padding: 6px 12px 6px 24px;
+        display: inline-flex;
+        align-items: center;
+        img{
+            margin-left: 80px;
+        }
+       }
+    }
+}
+
+// css contain
+
+.c-news{
+    &__contain{
+        font-size: (18px / $font-size) * 1rem;
+        line-height: 1.75;
+    }
+    &__diff{
+        font-size: (16px / $font-size) * 1rem;
+        font-weight: bold;
+        color: #fff;
+        background: #000;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.2;
+        padding: 1px 6px;
+    }
+}
+// css c-monoca__text
+.c-monoca{
+    &__text{
+        font-size: (18px / $font-size) * 1rem;
+        line-height: 1.75;
+        letter-spacing: 0.5px;
+    }
+}
+// css c-recruitment__text
+.c-recruitment{
+    &__text{
+        font-size: 1.125rem;
+        line-height: 1.75;
+        color: #fff;
+        font-weight: bold;
+        padding: 33px 0 54px;
+        letter-spacing: 1.7px;
+    }
+}

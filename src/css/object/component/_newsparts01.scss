@@ -1,0 +1,44 @@
+/* newsparts */ 
+
+.c-news{
+    &__list{
+        margin-top: 80px;
+    }
+    &__item {
+        padding: 14px 10px;
+        border-bottom: 2px solid #000;
+        &:first-child{
+        border-top: 2px solid #000;
+        }
+    }
+    &__day {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &__cat {
+        display: inline-block;
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contain{
+        display: flex;
+    }
+}
+
+// Desktop + Tablet
+// --------------------------------------------------
+// @include media-breakpoint-pc-tab {
+//     .c-news {
+//         &__item {
+//             a {
+//                 transition: 0.3s all;
+//                 &:hover{
+//                     opacity: 0.7;
+//                 }
+//             }
+//         }
+//     }
+// }
+

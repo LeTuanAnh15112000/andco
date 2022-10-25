@@ -1,6 +1,9 @@
-.c-slider img {
-    width:100%;/*スライダー内の画像を横幅100%に*/
-    height:auto;
+.c-slider {
+    border: 4px solid #1B1464;
+    img {
+        width:100%;/*スライダー内の画像を横幅100%に*/
+        height:auto;
+    }
 }
 
 /*slickのJSで書かれるタグ内、スライド左右の余白調整*/

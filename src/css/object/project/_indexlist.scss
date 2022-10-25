@@ -1,3 +1,43 @@
+// page index
+
+// background
 .c-background{
-    text-align: center;
+    &__scroll{
+        margin-top: 70px;
+    }
+    &__about{
+        margin-top: 160px;;
+    }
+}
+// mainvisual
+.c-mainvisual{
+    margin-top: 110px;
+}
+// shooting    
+.p-shooting{
+    margin-top: 200px;
+    .c-shooting{
+        &__online{
+            margin-top: 80px;
+        }
+    }
+}
+//news
+.p-news {
+    margin-top: 200px;
+}
+// monoca
+.p-monoca{
+    margin-top: 202px;
+}
+// store
+.p-store{
+    margin-top: 192px;
+}
+// slider
+.p-slider{
+    margin-top: 90px;
+}
+.p-recruitment{
+    margin-top: 198px;
 }
