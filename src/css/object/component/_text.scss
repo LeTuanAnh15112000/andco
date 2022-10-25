@@ -77,6 +77,12 @@
         letter-spacing: 0.5px;
     }
 }
+// store
+.c-store{
+    &__title{
+        font-size: (18px / $font-size) * 1rem;
+    }
+}
 // css c-recruitment__text
 .c-recruitment{
     &__text{

@@ -1,5 +1,32 @@
 /* title */ 
+.u-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.u-left{
+    margin-right: 10px;
+}
+.u-right{
+    margin-left: 10px;
+}
 .u-title{
+        color: #fff;
+        background: #000;
+        line-height: 1.6;
+        font-size: ( 36px / $font-size) * 1rem;
+        font-weight: bold;
+        position: relative;
+        padding: 0 32px;
+        letter-spacing: 4.6px;
+        @include media-breakpoint-sp{
+            font-size: ( 34px / $font-size) * 1rem;
+        }
+        &.--edit2{
+            letter-spacing: 1.2px;
+        }
+}
+.u-title2{
         color: #fff;
         background: #000;
         display: inline-block;
@@ -9,14 +36,16 @@
         position: relative;
         padding: 0 32px;
         letter-spacing: 4.6px;
-        &.--edit2{
-            letter-spacing: 1.2px;
-        }
+    &.--edit1{
+        color: #000;
+        background: #fff;
+        margin-top: 62px;
+        letter-spacing: 2.2px;
         &::before{
             content: "";
             position: absolute;
             left: -30px;
-            background: url("../../image/left.png") no-repeat;
+            background: url("../../image/left_footer.png") no-repeat;
             width: 17px;
             height: 57px;
         }
@@ -24,33 +53,11 @@
             content: "";
             position: absolute;
             right: -30px;
-            background: url("../../image/right.png") no-repeat;
+            background: url("../../image/right_footer.png") no-repeat;
             width: 17px;
             height: 57px;
         }
-        &.--edit1{
-            color: #000;
-            background: #fff;
-            margin-top: 62px;
-            letter-spacing: 2.2px;
-            &::before{
-                content: "";
-                position: absolute;
-                left: -30px;
-                background: url("../../image/left_footer.png") no-repeat;
-                width: 17px;
-                height: 57px;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                right: -30px;
-                background: url("../../image/right_footer.png") no-repeat;
-                width: 17px;
-                height: 57px;
-            }
-        }
- 
+    }
 }
 .u-title3{
     font-size: ( 28px / $font-size) * 1rem;

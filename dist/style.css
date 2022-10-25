@@ -922,6 +922,8 @@ input[type="checkbox"] {
   border: 2px solid #fff;
   margin: 10px;
   padding: 23px 58px;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .l-footer__border img {
@@ -2586,6 +2588,10 @@ a {
   letter-spacing: 0.5px;
 }
 
+.c-store__title {
+  font-size: 1.125rem;
+}
+
 .c-recruitment__text {
   font-size: 1.125rem;
   line-height: 1.75;
@@ -2596,7 +2602,51 @@ a {
 }
 
 /* title */
+.u-contain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.u-left {
+  margin-right: 10px;
+}
+
+.u-right {
+  margin-left: 10px;
+}
+
 .u-title {
+  color: #fff;
+  background: #000;
+  line-height: 1.6;
+  font-size: 2.25rem;
+  font-weight: bold;
+  position: relative;
+  padding: 0 32px;
+  letter-spacing: 4.6px;
+}
+
+@media only screen and (max-width: 739px) {
+  .u-title {
+    font-size: 2.125rem;
+  }
+}
+
+.u-title.--edit2 {
+  letter-spacing: 1.2px;
+}
+
+.u-title2 {
   color: #fff;
   background: #000;
   display: inline-block;
@@ -2608,36 +2658,14 @@ a {
   letter-spacing: 4.6px;
 }
 
-.u-title.--edit2 {
-  letter-spacing: 1.2px;
-}
-
-.u-title::before {
-  content: "";
-  position: absolute;
-  left: -30px;
-  background: url("../../image/left.png") no-repeat;
-  width: 17px;
-  height: 57px;
-}
-
-.u-title::after {
-  content: "";
-  position: absolute;
-  right: -30px;
-  background: url("../../image/right.png") no-repeat;
-  width: 17px;
-  height: 57px;
-}
-
-.u-title.--edit1 {
+.u-title2.--edit1 {
   color: #000;
   background: #fff;
   margin-top: 62px;
   letter-spacing: 2.2px;
 }
 
-.u-title.--edit1::before {
+.u-title2.--edit1::before {
   content: "";
   position: absolute;
   left: -30px;
@@ -2646,7 +2674,7 @@ a {
   height: 57px;
 }
 
-.u-title.--edit1::after {
+.u-title2.--edit1::after {
   content: "";
   position: absolute;
   right: -30px;

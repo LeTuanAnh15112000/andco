@@ -25,7 +25,7 @@
 </head>
 <body class="<%= getBodyClass(); %>">
 	<div id="all">
-		<% if(getPageId() != 'headerparts_type1') { %>
+		<!-- <% if(getPageId() != 'headerparts_type1') { %>
 		<header class="l-header">
 			<div class="l-header__inner">
 				<div class="l-header__content">
@@ -202,8 +202,7 @@
 				</div>
 			</div>
 		</header>
-		<% } %>
-
+		<% } %> -->
 		<!-- /#header -->
 		<div class="l-content">
 			<main class="l-primary"><% if (getPageId() == 'index') { %>
@@ -215,7 +214,13 @@
 					</div>
 					<div class="c-background__scroll"><span>SCROLL</span></div>
 					<div class="c-background__about">
-						<h2 class="u-title">「ひるとよる」について</h2>
+						<div class="u-contain">
+							<img class="u-left" src="<%= getRelativePath('/image/left.png'); %>" alt="「ひるとよる」について">
+							<h2 class="u-title">
+								「ひるとよる」について
+							</h2>
+							<img class="u-right" src="<%= getRelativePath('/image/right.png'); %>" alt="「ひるとよる」について">
+						</div>
 						<p class="c-background__text">
 							福岡市大名にあるらーめん居酒屋「博多らーめん・ちゃんぽん ひるとよる」<br>
 							ひるはランチ、よるは屋台を思わせる雰囲気で、焼き鳥やおでんなど、一品料理も豊富に揃えています。<br>
